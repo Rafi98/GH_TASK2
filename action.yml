@@ -13,4 +13,4 @@ inputs:
     required: true
 runs:
   using: "node16"
-  main:  "/github/workflows/activity.yml "
+  main:  ".github/workflows/activity.yml "
