@@ -9,12 +9,12 @@ jobs:
   generate-topics:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+      #- name: Checkout Repository
+       # uses: actions/checkout@v2
         
-      - uses: Rafi98/GH_TASK2@main
+      - uses: Rafi98/github-readme-topics-action@v1
         env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           EMAIL: s.mdrafi98@gmail.com
           TOPICS: |-
