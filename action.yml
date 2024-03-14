@@ -3,4 +3,4 @@ description: 'Description of my GitHub Action.'
 author: 'RAFI s.mdrafi98@gmail.com'
 runs:
   using: 'node12'
-  main: 'index.js'
+  main: 'activity.yml'
