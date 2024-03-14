@@ -15,4 +15,5 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         with:
           COMMIT_MSG: "docs(README): auto-update activity [skip ci]"
+          file_path: .github/workflows/topics.yml
           MAX_LINES: 10
