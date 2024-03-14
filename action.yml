@@ -1,6 +1,6 @@
 name: github-readme-topics-action
 description: Update GitHub profile README.md with categorized repos based on their Topics
-author: "Rafi s.mdrafi98@gmail.com>"
+author: "Rafi s.mdrafi98@gmail.com"
 branding:
   icon: "bookmark"
   color: "orange"
@@ -13,4 +13,4 @@ inputs:
     required: true
 runs:
   using: "node16"
-  main:  "activity.yml "
+  main:  "./.github/workflows/activity.yml "
