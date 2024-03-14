@@ -9,7 +9,7 @@ jobs:
   generate-topics:
     runs-on: ubuntu-latest
     steps:
-      - uses: Rafi/GH_Action@main
+      - uses: Rafi/GH_TASK2@main
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         with:
