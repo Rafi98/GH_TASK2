@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: Rafi98/GH_TASK2@main/.github/workflows/
+      - uses: Rafi98/GH_TASK2/.github/workflows/@main
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         with:
