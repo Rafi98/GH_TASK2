@@ -13,7 +13,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         with:
-          file_path: .github/workflows/activity.yml
           EMAIL: s.mdrafi98@gmail.com
           TOPICS: |-
             ci
