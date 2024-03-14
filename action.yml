@@ -11,6 +11,6 @@ inputs:
   EMAIL:
     description: s.mdrafi98
     required: true
-#runs:
-#  using: "node16"
- # main: "activity.yml"
+runs:
+  using: "node16"
+  main: "dist/index.js"
