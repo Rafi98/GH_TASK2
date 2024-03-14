@@ -1,4 +1,4 @@
-name: github-readme-topics-action
+name: GH_TASK2
 description: Update GitHub profile README.md with categorized repos based on their Topics
 author: "Rafi s.mdrafi98@gmail.com"
 branding:
