@@ -1,36 +1,6 @@
-# https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions
----
-name: Get Repositories
-description: 🗄️ Get organization or user repos based on the topics filter (with logic AND/OR) to use in the matrix job or another action.
-author: Dariusz Porowski
-branding:
-  icon: list # https://feathericons.com
-  color: gray-dark
-
-inputs:
-  owner:
-    description: GitHub Organization or User name, default to `github.repository_owner`
-    required: false
-    default: ${{ github.repository_owner }}
-  topics:
-    description: Comma-separated list of repository topics
-    required: false
-  operator:
-    description: Operator to use when filtering repositories by topics, `OR` or `AND`, default to `OR`
-    required: false
-    default: OR
-  matrix-use:
-    description: Output to use in the matrix job?, `true` or `false`
-    required: false
-    default: ${{ true }}
-  format:
-    description: Output format, `json` or `flat`, default to `json`
-    required: false
-    default: json
-  delimiter:
-    description: Delimiter to use when `format` is `flat`, default to `\n`
-    required: false
-  github-token:
-    description: GitHub Token with `repo` scope, default to `github.token`
-    required: false
-    default: ${{ github.token }}
+name: 'My GitHub Action'
+description: 'Description of my GitHub Action.'
+author: 'RAFI s.mdrafi98@gmail.com'
+runs:
+  using: 'node12'
+  main: 'index.js'
