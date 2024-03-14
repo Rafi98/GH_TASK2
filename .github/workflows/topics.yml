@@ -1,0 +1,23 @@
+name: readme-topics
+run-name: Update README.md with repos categorized by topic
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+
+jobs:
+  generate-topics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Rafi/GH_Action@main
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        with:
+          EMAIL: s.mdrafi98@gmail.com
+          TOPICS: |-
+            ci
+            devops
+            jenkins
+            testing
+            auto
+            pipeline
