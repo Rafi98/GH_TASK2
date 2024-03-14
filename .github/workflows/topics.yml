@@ -24,3 +24,4 @@ jobs:
             testing
             auto
             pipeline
+            deployment
