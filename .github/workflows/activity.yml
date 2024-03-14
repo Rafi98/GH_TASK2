@@ -10,10 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: Rafi98/GH_TASK2@main
+     # - uses: Rafi98/GH_TASK2@main
+      - uses: jamesgeorge007/github-activity-readme@master
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         with:
           COMMIT_MSG: "docs(README): auto-update activity [skip ci]"
-          file_path: .github/workflows/topics.yml
+          #file_path: .github/workflows/topics.yml
           MAX_LINES: 10
