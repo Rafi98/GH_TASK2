@@ -1,4 +1,4 @@
-<!--START_SECTION:topics-->
+<!--START_SECTION:activity-->
 ##Topics
 ci,devops,jenkins,testing,auto,pipeline
 <!--END_SECTION:activity-->
