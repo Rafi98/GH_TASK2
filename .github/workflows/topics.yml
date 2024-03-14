@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: Rafi98/github-readme-topics-action@v1
         env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GH_PAT: ${{ secrets.GH_PAT }}
         with:
           EMAIL: s.mdrafi98@gmail.com
           TOPICS: |-
