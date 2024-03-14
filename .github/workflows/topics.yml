@@ -12,9 +12,9 @@ jobs:
       #- name: Checkout Repository
        # uses: actions/checkout@v2
         
-      - uses: Rafi98/github-readme-topics-action@v1
+      - uses: rafi98/github-readme-topics-action@main
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           EMAIL: s.mdrafi98@gmail.com
           TOPICS: |-
