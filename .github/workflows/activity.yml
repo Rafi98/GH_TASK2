@@ -9,8 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v2
-      - uses: Rafi98/GH_TASK2@main
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Update README Activity
+        uses: jamesgeorge007/github-activity-readme@main
+        
+      #- uses: actions/checkout@v2
+      #- uses: Rafi98/GH_TASK2@main
         env:
           ACTIONS_STEP_DEBUG: true
           GH_TOKEN: ${{ secrets.GH_PAT }}
