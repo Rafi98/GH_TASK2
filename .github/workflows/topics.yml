@@ -9,7 +9,7 @@ jobs:
   generate-topics:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: Rafi98/github-readme-topics-action@v1
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         with:
