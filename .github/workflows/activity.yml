@@ -19,7 +19,7 @@ jobs:
       #- uses: Rafi98/GH_TASK2@main
         env:
           ACTIONS_STEP_DEBUG: true
-          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         with:
           COMMIT_MSG: "docs(README): auto-update activity [skip ci]"
           MAX_LINES: 10
