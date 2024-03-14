@@ -9,9 +9,9 @@ jobs:
   generate-topics:
     runs-on: ubuntu-latest
     steps:
-      - uses: GH_TASK2/github-readme-topics-action@v1
+      - uses: Rafi98/GH_TASK2@v2
         env:
-          GH_PAT: ${{ secrets.GH_PAT }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
         with:
           EMAIL: s.mdrafi98@gmail.com
           TOPICS: |-
