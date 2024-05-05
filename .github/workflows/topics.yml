@@ -1,27 +1,27 @@
-name: readme-topics
-run-name: Update README.md with repos categorized by topic
-on:
-  schedule:
-    - cron: "0 0 * * 0"
-  workflow_dispatch:
+#name: readme-topics
+#run-name: Update README.md with repos categorized by topic
+#on:
+  #schedule:
+    #- cron: "0 0 * * 0"
+  #workflow_dispatch:
 
-jobs:
-  generate-topics:
-    runs-on: ubuntu-latest
-    steps:
-      #- name: Checkout Repository
-       # uses: actions/checkout@v2
+#jobs:
+  #generate-topics:
+    #runs-on: ubuntu-latest
+    #steps:
+      ##- name: Checkout Repository
+       ## uses: actions/checkout@v2
         
-      - uses: Rafi98/github-readme-topics-action@main
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-        with:
-          EMAIL: s.mdrafi98@gmail.com
-          TOPICS: |-
-            ci
-            devops
-            jenkins
-            testing
-            auto
-            pipeline
-            deployment
+      #- uses: Rafi98/github-readme-topics-action@main
+        #env:
+          #GH_PAT: ${{ secrets.GH_PAT }}
+        #with:
+          #EMAIL: s.mdrafi98@gmail.com
+          #TOPICS: |-
+            #ci
+            #devops
+            #jenkins
+            #testing
+            #auto
+            #pipeline
+            #deployment
